@@ -1,9 +1,87 @@
-<mxfile host="app.diagrams.net" modified="2023-06-20T14:36:16.312Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" version="21.3.4" etag="vU0_IsPrx6NCZ_x7rJuF" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-20T14:56:14.099Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="SixKetmRm08_aSpJQYQY" version="21.3.4" type="github">
   <diagram name="第 1 页" id="0dWaPm4SmRjjuTRYCDIL">
-    <mxGraphModel>
+    <mxGraphModel dx="1687" dy="936" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="snHIBQjSwEREesXptp6K-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.136;entryY=0.006;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="snHIBQjSwEREesXptp6K-1" target="snHIBQjSwEREesXptp6K-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="snHIBQjSwEREesXptp6K-1" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;线程1&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snHIBQjSwEREesXptp6K-2" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;线程2&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snHIBQjSwEREesXptp6K-3" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;线程3&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snHIBQjSwEREesXptp6K-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.457;entryY=-0.015;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="snHIBQjSwEREesXptp6K-4" target="snHIBQjSwEREesXptp6K-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="snHIBQjSwEREesXptp6K-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="290" width="440" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="snHIBQjSwEREesXptp6K-6" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;进行递增操作&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="260" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="snHIBQjSwEREesXptp6K-7" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;AtomicInteger&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="372" y="300" width="106" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="snHIBQjSwEREesXptp6K-8" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;volatile int value = 0&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="337.5" y="340" width="175" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="snHIBQjSwEREesXptp6K-9" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;valueOffSet&lt;br&gt;value字段在AtomicInteger类中的位置&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="292.5" y="402.5" width="265" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="snHIBQjSwEREesXptp6K-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="snHIBQjSwEREesXptp6K-11" target="snHIBQjSwEREesXptp6K-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="snHIBQjSwEREesXptp6K-11" value="Unsafe类" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="344.97" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snHIBQjSwEREesXptp6K-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=15;" edge="1" parent="1" source="snHIBQjSwEREesXptp6K-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="404.97" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snHIBQjSwEREesXptp6K-13" value="根据valueOffSet计算当前value的值为x" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="344.97" y="600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snHIBQjSwEREesXptp6K-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=15;" edge="1" parent="1" source="snHIBQjSwEREesXptp6K-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="404.97" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snHIBQjSwEREesXptp6K-15" value="底层cas复杂的步骤&lt;br style=&quot;font-size: 15px;&quot;&gt;（原子性）" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="344.97" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snHIBQjSwEREesXptp6K-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=15;" edge="1" parent="1" source="snHIBQjSwEREesXptp6K-17" target="snHIBQjSwEREesXptp6K-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="249.97" y="827" />
+              <mxPoint x="249.97" y="630" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snHIBQjSwEREesXptp6K-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="snHIBQjSwEREesXptp6K-17" target="snHIBQjSwEREesXptp6K-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="snHIBQjSwEREesXptp6K-17" value="比较x和当前&lt;br style=&quot;font-size: 15px;&quot;&gt;value最新的值" style="rhombus;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="325.6" y="780" width="158.75" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="snHIBQjSwEREesXptp6K-19" value="循环判断" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="257.47" y="720" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="snHIBQjSwEREesXptp6K-22" value="不一致" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="259.97" y="835" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="snHIBQjSwEREesXptp6K-25" value="value值增加1" style="whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="537.475" y="797.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snHIBQjSwEREesXptp6K-27" value="一致" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="464.97" y="835" width="60" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
